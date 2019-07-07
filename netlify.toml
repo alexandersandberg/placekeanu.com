@@ -10,7 +10,7 @@
   force = false
 
 [[redirects]]
-  from = "https://elated-rosalind-4ec4ff.netlify.com/*"
+  from = "https://placekeanu.netlify.com/*"
   to = "https://placekeanu.com/:splat"
   status = 301
   force = true
