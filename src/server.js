@@ -53,7 +53,7 @@ app.get('/:width/:height?/:options?', (req, res) => {
 
   // if no width or height is set, redirect to home
   if (isNaN(width) === true || isNaN(height) === true) {
-    res.redirect(302, './error');
+    res.redirect(301, 'https://placekeanu.com/error');
     res.end();
   } else {
     // set each variable to true if respective option is present in path
