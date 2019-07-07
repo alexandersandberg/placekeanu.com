@@ -34,7 +34,7 @@ If you found a bug that needs fixing, or have a feature you want to discuss or i
 ## License
 All Keanus belong to their respective owners. See the full [Keanu list](https://placekeanu.com/keanus) for photo attributions.
 
-The service itself is open-source, and you can find the source code [on GitHub](https://github.com/alexandersandberg/placekeanu.com).
+Distributed under the MIT License © [Alexander Sandberg](https://github.com/alexandersandberg)
 
 ---
 
