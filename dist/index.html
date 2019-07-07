@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29679247-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-29679247-5');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PlaceKeanu.com</title>
+
+  <link rel="stylesheet" href="./equalize.min.css">
+  <style>
+    body {
+      max-width: 40em;
+      margin: auto;
+      padding: 1em;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0;
+    }
+
+    h1 + p {
+      margin-top: 0;
+    }
+
+    p,
+    ul {
+      font-family:"Menlo", "Consolas", "Roboto Mono", "Ubuntu Monospace", "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .right {
+      float: right;
+      padding: 1.5em 0 1em 1.5em;
+    }
+
+    a,
+    a:visited {
+      color: rgb(209, 89, 129);
+    }
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+
+    code {
+      background: #eee;
+      padding: 0.6em 0.8em;
+      border-radius: 0.25em;
+    }
+
+    li code {
+      padding: 0.3em 0.4em;
+    }
+
+    footer {
+      padding-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://placekeanu.com/700/350" alt="Keanu Reeves">
+    <h1>PlaceKeanu.com</h1>
+    <p><em>For when you need a little more Keanu in your life</em> <small>(always)</small></p>
+  </header>
+  <main>
+
+    <h2>How to use this <em>lifechanging</em> service</h2>
+    <p>Simply paste a link in this format, wherever you need him:</p>
+    <p><code>https://placekeanu.com/[width]/[height]*/[options]*</code><br><small>* optional</small></p>
+    <p>If you don't specify a height, you'll get a <b>square</b> Keanu...<br>
+    <small>...size-wise, that is, because Keanu is always mindblowingly awesome.</small></p>
+
+
+    <h2>Available [options]</h2>
+    <ul>
+      <li>Young Keanus only: <code>y</code></li>
+      <li>Grayscale: <code>g</code></li>
+    </ul>
+    <p><small>Note: Some Keanus are grayscale by default.</small></p>
+
+    <h2>Some examples</h2>
+    <ul>
+      <li>Any Keanu: <a href="https://placekeanu.com/200/150" target="_blank">https://placekeanu.com/200/150</a></li>
+      <li>Young Keanu: <a href="https://placekeanu.com/500/300/y" target="_blank">https://placekeanu.com/500/300/y</a></li>
+      <li>Square + Grayscale: <a href="https://placekeanu.com/250/g" target="_blank">https://placekeanu.com/250/g</a></li>
+      <li>Young + Grayscale: <a href="https://placekeanu.com/300/550/yg" target="_blank">https://placekeanu.com/300/550/yg</a></li>
+    </ul>
+
+    <img class="right" src="https://placekeanu.com/200/270" alt="Keanu Reeves">
+
+    <h2>How does it work?</h2>
+    <p>When you send a valid request to this website, a random photo of <a href="https://en.wikipedia.org/wiki/Keanu_Reeves" target="_blank">Keanu Reeves</a> is displayed.</p>
+    <p>The photos are cached on your end for 1 day, which is why you don't get a new Keanu on every page load.</p>
+    <p>While some placeholder image websites dynamically create new images, this service is SVG-based. For this to work properly, all photos have been encoded to Base64.</p>
+
+    <h2>Missing something? Found a bug?</h2>
+    <p>Tweet at me (<a href="https://twitter.com/alexandberg">@alexandberg</a>) and let me know! Would love to add some more features, if you've got any ideas.</p>
+
+    <h2>License</h2>
+    <p>All Keanus belong to their respective owners. See the full <a href="./keanus">Keanu list</a> for photo attributions.</p>
+    <p>The service itself is open-source, and you can find the source code <a href="https://github.com/alexandersandberg/placekeanu.com">on GitHub</a>.</p>
+  </main>
+
+  <footer>
+    <img src="https://placekeanu.com/684/350/y" alt="Keanu Reeves">
+    <p>Thanks for coming by! <em>You're breathtaking</em>. ❤️</p>
+    <p>A project by <a href="https://alexandersandberg.com">Alexander Sandberg</a> / <a href="https://github.com/alexandersandberg/placekeanu.com">Source code</a></small></p>
+  </footer>
+</body>
+</html>

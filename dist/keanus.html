@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29679247-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-29679247-5');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Full Keanu list / PlaceKeanu.com</title>
+
+  <link rel="stylesheet" href="./equalize.min.css">
+  <style>
+    body {
+      max-width: 40em;
+      margin: auto;
+      padding: 1em;
+    }
+
+    p,
+    ul {
+      font-family:"Menlo", "Consolas", "Roboto Mono", "Ubuntu Monospace", "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    a,
+    a:visited {
+      color: rgb(209, 89, 129);
+    }
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+
+    footer {
+      padding-top: 2rem;
+    }
+
+    figure {
+      margin: 2em auto;
+    }
+
+    figure img {
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>All Keanus, with photo attribution</h1>
+  </header>
+  <main>
+    <div id="photos"></div>
+  </main>
+  <footer>
+    <p><a href="./">Back to home</a></p>
+    <p>A project by <a href="https://alexandersandberg.com">Alexander Sandberg</a> / <a href="https://github.com/alexandersandberg/placekeanu.com">Source code</a></small></p>
+  </footer>
+  <script>
+    const photosContainer = document.getElementById("photos");
+
+    request = new XMLHttpRequest();
+    request.open('GET', './photos.json', true);
+
+    request.onload = function() {
+      if (request.status >= 200 && request.status < 400){
+        const photos = JSON.parse(request.responseText);
+        photos.forEach(e => {
+          let figure = document.createElement("figure");
+
+          let img = document.createElement("img");
+          img.src = e.data;
+          img.alt = "Keanu Reeves";
+
+          let figcaption = document.createElement("figcaption");
+          figcaption.innerHTML = e.attribution;
+
+          figure.appendChild(img);
+          figure.appendChild(figcaption);
+          photosContainer.appendChild(figure);
+        });
+      } else {
+        console.log('Ops, something went wrong.');
+      }
+    };
+
+    request.onerror = function() {
+      console.log('There was a connection error.');
+    };
+
+    request.send();
+  </script>
+</body>
+</html>
