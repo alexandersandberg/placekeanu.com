@@ -1,10 +1,12 @@
 ![Keanu Reeves](dist/preview.jpg)
 
 # PlaceKeanu.com
-For when you need a little more Keanu in your life
+*For when you need a little more Keanu in your life*
 
 ## How to use this *lifechanging* service
-Simply paste a link in this format, wherever you need him: `https://placekeanu.com/[width]/[height]*/[options]*`<br>
+Simply paste a link in this format, wherever you need him:
+
+`https://placekeanu.com/[width]/[height]*/[options]*`<br>
 (* optional)
 
 If you don't specify a height, you'll get a **square** Keanu...<br>
@@ -12,8 +14,9 @@ If you don't specify a height, you'll get a **square** Keanu...<br>
 
 ## Available [options]
 * Young Keanus only: `y`
-* Grayscale: `g`<br>
-Note: Some Keanus are grayscale by default.
+* Grayscale: `g`
+
+*Note: Some Keanus are grayscale by default.*
 
 ## Some examples
 * Any Keanu: [https://placekeanu.com/200/150](https://placekeanu.com/200/150)
