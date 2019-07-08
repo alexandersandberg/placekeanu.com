@@ -149,6 +149,7 @@ app.get('/photos.json', (req, res) => {
 app.get('/*', (req, res) => {
   // get path from url
   const path = req.path;
+
   // split the path into an array of parameters, and remove falsy (empty) items
   const params = path.split(/[\/x]+/).filter(e => e);
 
