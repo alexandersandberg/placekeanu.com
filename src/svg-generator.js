@@ -174,8 +174,7 @@ app.get('/*', (req, res) => {
 
   // if no width or height is set, redirect to home
   if (isNaN(width) === true || isNaN(height) === true) {
-    res.writeHead(400, {'Content-Type': 'text/html'});
-    res.end('<h1>wtf</h1>');
+    res.redirect(404, '/error');
   } else {
     // set each variable to true if respective option is present in path
     const grayscale = /[g]/.test(options);
