@@ -172,9 +172,9 @@ app.get('/*', (req, res) => {
     options = params[1];
   }
 
-  // if no width or height is set, redirect to home
+  // if no width or height is set, redirect to error page
   if (isNaN(width) === true || isNaN(height) === true) {
-    res.redirect(404, '/error');
+    res.redirect('/error');
   } else {
     // set each variable to true if respective option is present in path
     const grayscale = /[g]/.test(options);

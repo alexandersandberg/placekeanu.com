@@ -5,6 +5,7 @@
 
 [dev]
   publish = "dist"
+  functions = "functions"
 
 [[redirects]]
   from = "/keanus"
