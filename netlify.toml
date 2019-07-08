@@ -3,10 +3,6 @@
   publish = "dist"
   functions = "functions"
 
-[dev]
-  publish = "dist"
-  functions = "functions"
-
 [[redirects]]
   from = "https://placekeanu.netlify.com/*"
   to = "https://placekeanu.com/:splat"
