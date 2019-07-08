@@ -8,6 +8,12 @@
   functions = "functions"
 
 [[redirects]]
+  from = "https://placekeanu.netlify.com/*"
+  to = "https://placekeanu.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/keanus"
   to = "/keanus"
   status = 200
@@ -24,9 +30,3 @@
   to = "/.netlify/functions/svg-generator/:splat"
   status = 200
   force = false
-
-[[redirects]]
-  from = "https://placekeanu.netlify.com/*"
-  to = "https://placekeanu.com/:splat"
-  status = 301
-  force = true
