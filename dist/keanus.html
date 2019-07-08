@@ -87,18 +87,18 @@
   </header>
 
   <main>
-    <p><a href="./">Back to home</a></p>
+    <p><a href="/">Back to home</a></p>
     <div id="photos"></div>
   </main>
   <footer>
-    <p><a href="./">Back to home</a></p>
+    <p><a href="/">Back to home</a></p>
     <p>A project by <a href="https://alexandersandberg.com">Alexander Sandberg</a> / <a href="https://github.com/alexandersandberg/placekeanu.com">Source code</a></small></p>
   </footer>
   <script>
     const photosContainer = document.getElementById("photos");
 
     request = new XMLHttpRequest();
-    request.open('GET', '/.netlify/functions/svg-generator/photos.json', true);
+    request.open('GET', '/photos.json', true);
 
     request.onload = function() {
       if (request.status >= 200 && request.status < 400){
