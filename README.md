@@ -10,7 +10,7 @@ Simply paste a link in this format, wherever you need him:
 (* optional)
 
 If you don't specify a height, you'll get a **square** Keanu...<br>
-...size-wise, that is, because Keanu is always mindblowingly awesome.
+...shape-wise, that is, because Keanu is always mindblowingly awesome.
 
 ## Available [options]
 * Young Keanus only: `y`
