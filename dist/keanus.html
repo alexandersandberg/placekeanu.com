@@ -90,7 +90,7 @@
 
   <main>
     <p><a href="/">Back to home</a></p>
-    <div id="photos"></div>
+    <div id="photos">Loading photos...</div>
   </main>
   <footer>
     <p><a href="/">Back to home</a></p>
@@ -120,12 +120,12 @@
           photosContainer.appendChild(figure);
         });
       } else {
-        console.log('Ops, something went wrong.');
+        photosContainer.innerHTML = 'Ops, something went wrong.';
       }
     };
 
     request.onerror = function() {
-      console.log('There was a connection error.');
+      photosContainer.innerHTML = 'There was a connection error.';
     };
 
     request.send();
