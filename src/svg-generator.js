@@ -141,6 +141,14 @@ const photos = [
   }
 ];
 
+app.get('/.netlify/functions/svg-generator/keanus', (req, res) => {
+  res.redirect('/keanus.html');
+});
+
+app.get('/.netlify/functions/svg-generator/error', (req, res) => {
+  res.redirect('/error.html');
+});
+
 app.get('/.netlify/functions/svg-generator/photos.json', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   res.end(JSON.stringify(photos));
