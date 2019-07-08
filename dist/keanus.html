@@ -98,7 +98,7 @@
     const photosContainer = document.getElementById("photos");
 
     request = new XMLHttpRequest();
-    request.open('GET', './photos.json', true);
+    request.open('GET', '/.netlify/functions/svg-generator/photos.json', true);
 
     request.onload = function() {
       if (request.status >= 200 && request.status < 400){
