@@ -10,6 +10,24 @@
   force = true
 
 [[redirects]]
+  from = "/"
+  to = "/"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/keanus"
+  to = "/keanus"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/error"
+  to = "/error"
+  status = 200
+  force = false
+
+[[redirects]]
   from = "/*"
   to = "/.netlify/functions/svg-generator/:splat"
   status = 200

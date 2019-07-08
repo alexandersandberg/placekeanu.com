@@ -141,23 +141,15 @@ const photos = [
   }
 ];
 
-app.get('/.netlify/functions/svg-generator/keanus', (req, res) => {
-  res.redirect('/keanus.html');
-});
-
-app.get('/.netlify/functions/svg-generator/error', (req, res) => {
-  res.redirect('/error.html');
-});
-
-app.get('/.netlify/functions/svg-generator/photos.json', (req, res) => {
+app.get('/photos.json', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   res.end(JSON.stringify(photos));
 });
 
 app.get('/*', (req, res) => {
   // get path from url
-  const path = req.originalUrl;
-  // remove path to the hosted function, and split the rest up into parameters
+  const path = req.path;
+  // split the path into an array of parameters, and remove falsy (empty) items
   const params = path.replace('/.netlify/functions/svg-generator/', '').split(/[\/x]+/);
 
   // assign each parameter into a separate variable
@@ -180,8 +172,8 @@ app.get('/*', (req, res) => {
     options = params[1];
   }
 
-  // if no width or height is set, redirect to error page
-  if (isNaN(width) === true || isNaN(height) === true) {
+  // if no width is set, redirect to error page
+  if (isNaN(width) === true) {
     res.redirect('/error');
   } else {
     // set each variable to true if respective option is present in path

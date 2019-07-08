@@ -1,6 +1,6 @@
 {
   "name": "placekeanu.com",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "For when you need a little more Keanu in your life",
   "main": "dist/index.html",
   "scripts": {
