@@ -150,7 +150,7 @@ app.get('/*', (req, res) => {
   // get path from url
   const path = req.path;
   // split the path into an array of parameters, and remove falsy (empty) items
-  const params = path.replace('/.netlify/functions/svg-generator/', '').split(/[\/x]+/);
+  const params = path.split(/[\/x]+/).filter(e => e);
 
   // assign each parameter into a separate variable
   const width = parseInt(params[0], 10);
