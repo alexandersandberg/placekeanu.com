@@ -24,7 +24,7 @@ If you don't specify a height, you'll get a **square** Keanu...<br>
 * Square + Grayscale: [https://placekeanu.com/250/g](https://placekeanu.com/250/g)
 * Young + Grayscale: [https://placekeanu.com/300/550/yg](https://placekeanu.com/300/550/yg)
 
-If you, for instance, need a little more Keanu in your website projects, you can include him with an <img>:
+If you, for instance, need a little more Keanu in your website projects, you can include him with an \<img\>:
 
 `<img src="https://placekeanu.com/450" alt="">`
 
