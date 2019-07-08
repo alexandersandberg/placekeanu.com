@@ -90,7 +90,7 @@
 
   <main>
     <p><a href="/">Back to home</a></p>
-    <div id="photos">Loading photos...</div>
+    <div id="photos"><p>Loading photos...</p></div>
   </main>
   <footer>
     <p><a href="/">Back to home</a></p>
@@ -104,6 +104,7 @@
 
     request.onload = function() {
       if (request.status >= 200 && request.status < 400){
+        photosContainer.innerHTML = '';
         const photos = JSON.parse(request.responseText);
         photos.forEach(e => {
           let figure = document.createElement("figure");
@@ -120,12 +121,12 @@
           photosContainer.appendChild(figure);
         });
       } else {
-        photosContainer.innerHTML = 'Ops, something went wrong.';
+        photosContainer.innerHTML = '<p>Ops, something went wrong.</p>';
       }
     };
 
     request.onerror = function() {
-      photosContainer.innerHTML = 'There was a connection error.';
+      photosContainer.innerHTML = '<p>There was a connection error.</p>';
     };
 
     request.send();
