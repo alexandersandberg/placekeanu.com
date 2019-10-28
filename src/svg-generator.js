@@ -146,6 +146,10 @@ app.get('/photos.json', (req, res) => {
   res.end(JSON.stringify(photos));
 });
 
+app.get('/preview.jpg', (req, res) => {
+  res.setHeader('Content-Type', 'image/jpeg')
+})
+
 app.get('/*', (req, res) => {
   // get path from url
   const path = req.path;
