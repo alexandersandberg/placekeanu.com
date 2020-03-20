@@ -1,0 +1,54 @@
+*,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;font-size:112.5%;line-height:1.7;padding:1em;-webkit-text-size-adjust:100%;word-break:break-word}body,button,dl dl,dl ol,dl ul,input,ol dl,ol ol,ol ul,select,textarea,ul dl,ul ol,ul ul{margin:0}hr{overflow:visible;height:0}details,main{display:block}summary{display:list-item}nav ol,nav ul{list-style:none;padding:0}code,kbd,pre,samp{font-family:Menlo,Consolas,Roboto Mono,"Ubuntu Monospace",Noto Mono,Oxygen Mono,Liberation Mono,monospace,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-size:1em}abbr[title]{cursor:help;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}audio,canvas,iframe,img,svg,video{vertical-align:middle}iframe{border-style:none}svg:not([fill]){fill:currentColor}svg:not(:root){overflow:hidden}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}fieldset{border:1px solid #666;padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto;resize:vertical}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled=true],[disabled]{cursor:not-allowed}[aria-hidden=false][hidden]{display:inline;display:initial}[aria-hidden=false][hidden]:not(:focus){clip:rect(0,0,0,0);position:absolute}@media print{a[href^=http]:after{content:" (" attr(href) ")"}}
+
+    body {
+      max-width: 40em;
+      margin: auto;
+      padding: 1em;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0;
+    }
+
+    h1 + p {
+      margin-top: 0;
+    }
+
+    p,
+    ul {
+      font-family:"Menlo", "Consolas", "Roboto Mono", "Ubuntu Monospace", "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .right {
+      float: right;
+      padding: 1.5em 0 1em 1.5em;
+    }
+
+    a,
+    a:visited {
+      color: rgb(209, 89, 129);
+    }
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+
+    code {
+      background: #eee;
+      padding: 0.6em 0.8em;
+      border-radius: 0.25em;
+    }
+
+    li code {
+      padding: 0.3em 0.4em;
+    }
+
+    footer {
+      padding-top: 2rem;
+    }

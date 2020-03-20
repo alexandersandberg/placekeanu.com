@@ -1,11 +1,8 @@
 {
   "name": "placekeanu.com",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "For when you need a little more Keanu in your life",
   "main": "dist/index.html",
-  "scripts": {
-    "build": "netlify-lambda build src"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexandersandberg/placekeanu.com.git"
@@ -26,7 +23,6 @@
   "homepage": "https://github.com/alexandersandberg/placekeanu.com#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "netlify-lambda": "^1.5.0",
-    "serverless-http": "^2.0.2"
+    "serverless-http": "^2.3.2"
   }
 }

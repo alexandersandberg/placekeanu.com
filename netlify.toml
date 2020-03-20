@@ -1,7 +1,6 @@
 [build]
-  command = "npm install && npm run build"
   publish = "dist"
-  functions = "functions"
+  functions = "lambda"
 
 [[redirects]]
   from = "https://placekeanu.netlify.com/*"
@@ -13,22 +12,34 @@
   from = "/"
   to = "/"
   status = 200
-  force = false
+  force = true
+
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/static/favicon.ico"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/static/*"
+  to = "/static/:splat"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/keanus"
   to = "/keanus"
   status = 200
-  force = false
+  force = true
 
 [[redirects]]
   from = "/error"
   to = "/error"
   status = 200
-  force = false
+  force = true
 
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/svg-generator/:splat"
+  to = "/.netlify/functions/generator/:splat"
   status = 200
-  force = false
+  force = true
