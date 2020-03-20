@@ -1,5 +1,4 @@
-![Keanu Reeves](dist/preview.jpg)
-
+![Keanu Reeves](dist/static/preview.jpg)
 
 # PlaceKeanu.com
 *For when you need a little more Keanu in your life*
