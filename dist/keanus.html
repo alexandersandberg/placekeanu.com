@@ -66,7 +66,7 @@
     request = new XMLHttpRequest();
     request.open('GET', '/static/photos.json', true);
 
-    request.onload = function() {
+    request.onload = () => {
       if (request.status >= 200 && request.status < 400){
         photosContainer.innerHTML = '';
         const photos = JSON.parse(request.responseText);
@@ -89,7 +89,7 @@
       }
     };
 
-    request.onerror = function() {
+    request.onerror = () => {
       photosContainer.innerHTML = '<p>There was a connection error.</p>';
     };
 
